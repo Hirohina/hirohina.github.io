@@ -1,0 +1,258 @@
+@import 'skillbar'; //CSS pour les skillbar animées
+@import 'fonts'; //fichier avec les polices d'écritures
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url(../../images/bgordi-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1%;
+    padding-bottom: 15%;
+    text-align: center;
+
+
+
+    h2 {
+        font-style: italic;
+    }
+}
+
+#nom {
+    display: inline-block; //Permet l'alignement avec la boite ombrée
+    background-color: rgba(255, 255, 255, 0.342);
+    color: black;
+    padding-bottom: 3%;
+    
+
+    img {
+        padding-top: 2%;
+        border-radius: 50%;
+        width: 35%;
+        height: auto;
+    }
+}
+
+#presentation {
+    background-image: url(../../images/triangles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding: 5%;
+
+    
+
+    font-size: 1.5em;
+
+    a { //Soulignage animé des liens
+        color: rgb(209, 42, 42);
+        text-decoration: none;
+        position: relative;
+
+        &:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: rgb(202, 63, 63);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+
+          &:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
+      }
+      
+}
+
+#presentationtexte {
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.596);
+
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#competenceswrapper {
+
+    background-image: url(../../images/abstraitoil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 5%;
+
+
+    #competences {
+
+        padding: 2%;
+        background-color: rgba(255, 255, 255, 0.247);
+    
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 3%;
+        }
+    }
+    
+    #langues {
+
+        p {
+            margin-left: 5%;
+            font-style: italic;
+            padding-bottom: 1%;
+        }
+    }
+
+}
+
+#formationswrapper {
+
+    background-image: url(../../images/network.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 5%;
+    
+    font-size: 1.25em;
+
+    #formations {
+
+        padding: 2%;
+        background-color: rgba(255, 255, 255, 0.527);
+       
+    
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 3%;
+        }
+    
+        li {
+            margin-bottom: 1%;
+        }
+    
+        i {
+            color: blue;
+        }
+
+         a { //Soulignage animé des liens
+        color: rgb(59, 42, 209);
+        text-decoration: none;
+        position: relative;
+
+        &:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: rgb(59, 42, 209);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          
+          &:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
+      }
+
+    }
+
+}
+
+#experienceswrapper {
+
+    background-image: url(../../images/cercleabstrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 5%;
+    font-size: 1.25em;
+
+    #experiences {
+
+        padding: 2%;
+        background-color: rgba(255, 255, 255, 0.705);
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 3%;
+        }
+    
+        li {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+    
+        p {
+            margin-left: 5%;
+            font-style: italic;
+            font-size: 0.85em;
+        }
+    
+        i {
+            color: blue;
+        }
+    }
+
+}
+
+
+
+.parallax-container { //taille personnalisée sur le parallax
+    height: 300px;
+  }
+
+#infoscontact {
+
+    text-align: center;
+
+    h5 {
+
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    i {
+        margin-right: 2%;
+    }
+
+    a { //Soulignage animé des liens
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        position: relative;
+
+        &:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: rgb(255, 255, 255);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          
+          &:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
+      }
+
+}
+
