@@ -18,5 +18,9 @@ $(window).scroll(function() {
 		 });
 	 });
 		};
+		
+		if (temp === 2) {
+			break;
+		}
 	 };
 	 });
