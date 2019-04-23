@@ -1,4 +1,4 @@
-/*$(window).scroll(function() {
+$(window).scroll(function() {
 	var hT = $('#parallaxcomp').offset().top,
 		hH = $('#parallaxcomp').outerHeight(),
 		wH = $(window).height(),
