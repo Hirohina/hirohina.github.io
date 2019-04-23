@@ -1,4 +1,4 @@
-var temp = 1; 
+var temp = 0; 
 
 $(window).scroll(function() {
 	if (temp == 0) {
@@ -13,14 +13,15 @@ $(window).scroll(function() {
 			 jQuery(this).find('.skillbar-bar').animate({
 				 width:jQuery(this).attr('data-percent')
 			 },3000);
-			  temp = 2;
+              temp = 1;
+              return;
 			  
 		 });
 	 });
 		};
 		
-		if (temp === 2) {
-			break;
-		}
-	 };
+		
+     
+     }
+ 
 	 });
